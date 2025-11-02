@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S.T.A.R.L.I.G.H.T — AI Timer</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0a1220"/>
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Boot overlay -->
+  <div id="boot" class="boot hidden">
+    <div class="boot-inner">
+      <img src="assets/logo.svg" alt="Steele Tech Logo" class="boot-logo" />
+      <p class="boot-line boot-small">Steele Tech presents</p>
+      <h1 class="boot-line">S.T.A.R.L.I.G.H.T.</h1>
+      <p class="boot-line boot-small">A Life-Integrated AI Timer for Growth & Harmony</p>
+      <p class="boot-acronym">
+        <strong>S.T.A.R.L.I.G.H.T.</strong><br>
+        Steele. Technologies. A.I. Research, for Life.<br>
+        Integration. Growth. Harmony. Timer.
+      </p>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <header class="head">
+      <img src="assets/logo.svg" alt="Steele Tech Logo" class="logo" />
+      <p class="sub"><strong>Steele Tech presents</strong></p>
+      <h1>S.T.A.R.L.I.G.H.T.</h1>
+      <p class="sub small">A Life-Integrated AI Timer for Growth & Harmony</p>
+      <p class="acronym">
+        <strong>S.T.A.R.L.I.G.H.T.</strong><br>
+        Steele. Technologies. A.I. Research, for Life.<br>
+        Integration. Growth. Harmony. Timer.
+      </p>
+      <button id="installBtn" class="install hidden">➕ Install app</button>
+    </header>
+
+    <div class="orb-wrap">
+      <div id="orb" class="orb mia"></div>
+      <div class="rings">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+      </div>
+    </div>
+
+    <section class="card">
+      <div class="row assistants">
+        <button class="chip active" data-ai="MIA">MIA</button>
+        <button class="chip" data-ai="BRIAN">BRIAN</button>
+        <span id="aiLabel" class="ai-label">Selected: MIA</span>
+      </div>
+
+      <div class="bios">
+        <div id="bioMIA" class="bio show">
+          <strong>MIA — Modular Intelligence Assistant</strong><br/>
+          Calm, encouraging guidance for wellness, clarity, and balanced productivity.
+        </div>
+        <div id="bioBRIAN" class="bio">
+          <strong>BRIAN — Behavioral Response Intelligence & Adaptive Navigator</strong><br/>
+          Analytical, structured support for disciplined focus and growth.
+        </div>
+      </div>
+
+      <div class="row presets">
+        <span class="hint">Presets:</span>
+        <button class="pill" data-secs="120">2m Break</button>
+        <button class="pill" data-secs="300">5m Reset</button>
+        <button class="pill" data-secs="600">10m Hydrate</button>
+        <button class="pill" data-secs="1500">25m Focus</button>
+        <button class="pill" data-secs="2700">45m Deep Focus</button>
+      </div>
+
+      <div class="row timer">
+        <label for="seconds">Custom (sec)</label>
+        <input id="seconds" type="number" min="1" value="600"/>
+        <button id="startBtn" class="primary">Start</button>
+        <button id="stopBtn" class="ghost">Stop</button>
+      </div>
+
+      <div id="countdown" class="countdown">Ready.</div>
+    </section>
+
+    <footer class="foot">
+      <small>Steele Tech © — Powered by S.T.A.R.L.I.G.H.T. AI</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
