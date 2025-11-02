@@ -1,3 +1,4 @@
+
 # S.T.A.R.L.I.G.H.T. — Steele Tech
 A Life‑Integrated AI Timer for Growth & Harmony
 
